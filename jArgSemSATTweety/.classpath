@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/arg/dung/1.4/dung-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/commons/1.4/commons-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-core/0.9.30/logback-core-0.9.30.jar"/>
+	<classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-classic/0.9.30/logback-classic-0.9.30.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/log4j-over-slf4j/1.6.3/log4j-over-slf4j-1.6.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/graphs/1.4/graphs-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/math/1.4/math-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-math/2.1/commons-math-2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/gov/nist/math/jama/1.0.3/jama-1.0.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/ojalgo/ojalgo/35.0.0/ojalgo-35.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/dbtsai/lbfgs/lbfgs/0.1/lbfgs-0.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/logics/pl/1.4/pl-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/ow2/sat4j/org.ow2.sat4j.core/2.3.4/org.ow2.sat4j.core-2.3.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/logics/fol/1.4/fol-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/logics/commons/1.4/commons-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/tweety/plugin/1.4/plugin-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/jspf/core/1.0.2/core-1.0.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

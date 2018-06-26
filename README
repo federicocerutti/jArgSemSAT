@@ -1,0 +1,14 @@
+AUTHORS:
+
+Federico Cerutti, f.cerutti@abdn.ac.uk 
+Mauro Vallati, m.vallati@hud.ac.uk
+Massimiliano Giacomin, massimiliano.giacomin@unibs.it
+
+Please refer to ArgSemSAT http://sourceforge.net/projects/argsemsat/ for further details.
+
+*************************
+jArgSemSAT has been designed for providing an efficient, self-contained, Java library, 
+therefore it is not suitable to be used for evaluating the performance of the ArgSemSAT approach. 
+ 
+On this regard, the C++ version, available at http://sourceforge.net/projects/argsemsat/ , must be used.
+************************* 

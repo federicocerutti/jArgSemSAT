@@ -1,0 +1,129 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.jargsemsat</groupId>
+	<artifactId>jArgSemSAT</artifactId>
+	<version>0.1.7</version>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.sat4j</groupId>
+			<artifactId>org.sat4j.core</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+	</dependencies>
+	<name>net.sf.jargsemsat:jArgSemSAT</name>
+	<url>http://sourceforge.net/projects/jargsemsat/</url>
+	<description>Java re-implementation of ArgSemSAT https://sourceforge.net/projects/argsemsat/
+
+NOT TO BE USED FOR EMPIRICAL EVALUATION</description>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Federico Cerutti</name>
+			<email>federico.cerutti@acm.org</email>
+			<organization>Cardiff University</organization>
+			<organizationUrl>http://www.cardiff.ac.uk/</organizationUrl>
+		</developer>
+
+		<developer>
+			<name>Mauro Vallati</name>
+			<email>m.vallati@hud.ac.uk</email>
+			<organization>University of Huddersfield</organization>
+			<organizationUrl>http://www.hud.ac.uk/</organizationUrl>
+		</developer>
+
+		<developer>
+			<name>Massimiliano Giacomin</name>
+			<email>massimiliano.giacomin@unibs.it</email>
+			<organization>Universita' degli Studi di Brescia</organization>
+			<organizationUrl>http://www.unibs.it/</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<url>http://hg.code.sf.net/p/jargsemsat/code</url>
+		<connection>http://hg.code.sf.net/p/jargsemsat/code</connection>
+		<developerConnection>http://hg.code.sf.net/p/jargsemsat/code</developerConnection>
+	</scm>
+</project>

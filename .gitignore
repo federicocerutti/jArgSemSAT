@@ -1,0 +1,7 @@
+jArgSemSAT/bin
+*.jar
+*.asc
+jArgSemSAT/target
+jArgSemSATTweety/target
+*.war
+jArgSemSATWeb/target
